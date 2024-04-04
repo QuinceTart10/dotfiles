@@ -27,6 +27,9 @@ setopt appendhistory
 setopt inc_append_history
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
 
+# Envvars
+export GPG_TTY=$(tty)
+
 # Bind keys more properly
 bindkey "\e[3~" delete-char
 bindkey "^[[H" beginning-of-line
