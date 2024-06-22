@@ -30,6 +30,9 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}
 # Envvars
 export GPG_TTY=$(tty)
 
+# Aliases
+alias neofetch='fastfetch -c neofetch'
+
 # Bind keys more properly
 bindkey "\e[3~" delete-char
 bindkey "^[[H" beginning-of-line
